@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student Activity Management Portal">
+  <title>Student Activity Portal</title>
+</head>
+<body>
+
+  <header>
+    <h1>Student Activity Portal</h1>
+    <nav aria-label="Main navigation">
+      <a href="#events">Events</a>
+      <br>
+      <a href="#activities">Activities</a>
+      <br>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <article>
+        <h3>Hackathon Night</h3>
+        <p>5 Dec 2026, Innovation Lab</p>
+      </article>
+      <article>
+        <h3>Cricket Cup</h3>
+        <p>12 Dec 2026, Main Ground</p>
+      </article>
+    </section>
+
+    <section id="activities">
+      <h2>Activities</h2>
+      <article>
+        <h3>Coding Club</h3>
+        <p>Weekly coding workshops.</p>
+      </article>
+      <article>
+        <h3>Sports Council</h3>
+        <p>Training and tournaments.</p>
+      </article>
+    </section>
+
+    <section id="register">
+      <h2>Student Registration</h2>
+      <form action="#" method="post">
+
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="dept">Department</label>
+        <select id="dept" name="dept" required>
+          <option value="">Select</option>
+          <option>CSE</option>
+          <option>AI and DS</option>
+          <option>ECE</option>
+        </select>
+        <br><br>
+
+        <fieldset>
+          <legend>Participation type</legend>
+          <input type="radio" id="individual" name="mode" value="individual" required>
+          <label for="individual">Individual</label>
+          <br>
+          <input type="radio" id="team" name="mode" value="team">
+          <label for="team">Team</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend>Interests</legend>
+          <input type="checkbox" id="tech" name="interest" value="tech">
+          <label for="tech">Technology</label>
+          <br>
+          <input type="checkbox" id="sports" name="interest" value="sports">
+          <label for="sports">Sports</label>
+        </fieldset>
+        <br>
+
+        <label for="reason">Why do you want to join?</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h2>Key Dates</h2>
+    <ul>
+      <li>Registration closes: 1st Dec</li>
+      <li>Hackathon Night: 5th Dec</li>
+      <li>Cricket Cup: 12th Dec</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>Contact: staffaffairs@edu.in</p>
+  </footer>
+
+</body>
+</html>
