@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SKS Showroom</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f2f2f2; }
+    header, footer, button { background: #14452f; color: white; }
+    header, main { padding: 15px 25px; }
+    header h1 { margin: 0 0 8px; }
+    nav a { color: white; margin-right: 15px; }
+    h2 { color: #14452f; }
+    .card, form { background: white; border: 1px solid #999; padding: 15px; margin-bottom: 10px; }
+  
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    fieldset label { display: inline; font-weight: normal; }
+    button { margin-top: 15px; border: 0; padding: 10px 20px; }
+    footer { margin-top: 25px; padding: 12px; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SKS Wheels</h1>
+    <nav aria-label="Main navigation">
+      <a href="#cars">Cars</a>
+      <a href="#offers">Offers</a>
+      <a href="#testdrive">Test Drive</a>
+    </nav>
+  </header>
+  <main>
+    <section id="cars">
+      <h2>Cars in Our Showroom</h2>
+      <article class="card"><h3>City Hatchback</h3><p>Petrol, manual, 5 seats. From Rs 6.5 lakh.</p></article>
+      <article class="card"><h3>Family SUV</h3><p>Diesel, automatic, 7 seats. From Rs 14 lakh.</p></article>
+      <article class="card"><h3>Electric Sedan</h3><p>350 km range. From Rs 18 lakh.</p></article>
+    </section>
+    <aside id="offers">
+      <h2>Festival Offers</h2>
+      <p>Free first service on all bookings made this December.</p>
+    </aside>
+    <section id="testdrive">
+      <h2>Book a Test Drive</h2>
+      <form action="#" method="post">
+        <label for="fname">Your name</label>
+        <input type="text" id="fname" name="fname" required>
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="model">Car model</label>
+        <select id="model" name="model" required>
+          <option value="">Choose a car</option>
+          <option>City Hatchback</option>
+          <option>Family SUV</option>
+          <option>Electric Sedan</option>
+        </select>
+        <label for="date">Preferred date</label>
+        <input type="date" id="date" name="date" required>
+        <fieldset>
+          <legend>Test drive location</legend>
+          <input type="radio" id="showroom" name="place" value="showroom" required>
+          <label for="showroom">Showroom</label>
+          <input type="radio" id="home" name="place" value="home">
+          <label for="home">Home</label>
+        </fieldset>
+        <fieldset>
+          <legend>Extras</legend>
+          <input type="checkbox" id="loan" name="extras" value="loan">
+          <label for="loan">Car loan</label>
+          <input type="checkbox" id="exchange" name="extras" value="exchange">
+          <label for="exchange">Old car exchange</label>
+        </fieldset>
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" rows="4" cols="40"></textarea>
+        <button type="submit">Book Test Drive</button>
+      </form>
+    </section>
+  </main>
+  <footer><p>Metro Wheels, Nellore. 2026</p></footer>
+</body>
+</html>
